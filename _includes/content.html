@@ -19,15 +19,15 @@
           {% for group in tourney.matches %}
             {% for match in group %}
               <tr class="{% if match.spoiler-protection %}spoiler-protection {% endif %}{% if forloop.first %}cut {% endif %}">
-                <td><a href="">{{ match.name }}</a></td>
+                <td><a href="{{ match.link }}">{{ match.name }}</a></td>
                 {% if match.p1.link %}
-                  <td><a href="http://thejoustingpavilion.com/players/8008">{{ match.p1.name }}</a></td>
+                  <td><a href="{{ match.p1.link }}">{{ match.p1.name }}</a></td>
                 {% else %}
                   <td>{{ match.p1.name }}</td>
                 {% endif %}
                 <td>{{ match.p1.faction }}<br>{{ match.p1.agenda }}</td>
                 {% if match.p2.link %}
-                  <td><a href="http://thejoustingpavilion.com/players/8008">{{ match.p2.name }}</a></td>
+                  <td><a href="{{ match.p2.link }}">{{ match.p2.name }}</a></td>
                 {% else %}
                   <td>{{ match.p2.name }}</td>
                 {% endif %}
