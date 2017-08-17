@@ -175,12 +175,18 @@ td:last-child {
   padding: 5px 20px;
   transition: all .2s ease;
 }
-.tourneys {
-  margin: 0 300px 0 0;
+.content {
+  margin: 0 0 0 300px;
   padding: 0;
   list-style: none;
 }
-.tourneys > li {
+.content > li {
   margin: 0;
   padding: 0;
+}
+.content .details {
+  text-align: center;
+}
+.content .details a {
+  color: #fff;
 }
