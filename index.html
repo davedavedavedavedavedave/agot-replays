@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% assign tourneys = site.emptyArray %}
+{% for entry in site.data.tourneys %}
+  {% assign tourneys = tourneys | push: entry[1] %}
+{% endfor %}
+{% assign tourneys = (tourneys | sort: 'date' | reversed) %}
+
+{% include nav.html tourneys=tourneys %}
+{% include content.html tourneys=tourneys %}

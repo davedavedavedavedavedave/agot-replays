@@ -1,0 +1,46 @@
+{
+  "name": "Brawl at the Crossroads Inn",
+  "date": "2017-08-05",
+  "link": "http://thejoustingpavilion.com/tournaments/4005/games",
+  "matches": [
+    [{
+      "name": "Quarterfinal 1",
+      "link": "/watch/?game=brawl-2017/quarter-1",
+      "p1": { "name": "Maximilian Stolz", "faction": "Lannister", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/8008" },
+      "p2": { "name": "David Nagy", "faction": "Targaryen", "agenda": "Banner of the Lion", "link": "http://thejoustingpavilion.com/players/7722" }
+    }, {
+      "name": "Quarterfinal 2",
+      "link": "/watch/?game=brawl-2017/quarter-2",
+      "p1": { "name": "Vrbi", "faction": "Stark", "agenda": "Fealty", "link": "http://thejoustingpavilion.com/players/6021" },
+      "p2": { "name": "Xoff", "faction": "Night's Watch", "agenda": "Kings of Summer", "link": "http://thejoustingpavilion.com/players/2266" }
+    }, {
+      "name": "Quarterfinal 3",
+      "link": "/watch/?game=brawl-2017/quarter-3",
+      "p1": { "name": "Sam Nowrouzi", "faction": "Greyjoy", "agenda": "Banner of the Dragon", "link": "http://thejoustingpavilion.com/players/2252" },
+      "p2": { "name": "Daniele Galli", "faction": "Greyjoy", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/4603" }
+    }, {
+      "name": "Quarterfinal 4",
+      "link": "/watch/?game=brawl-2017/quarter-4",
+      "p1": { "name": "Michi Bräustetter", "faction": "Greyjoy", "agenda": "Banner of the Dragon", "link": "http://thejoustingpavilion.com/players/8001" },
+      "p2": { "name": "Jannis Roepert", "faction": "Martell", "agenda": "Banner of the Stag", "link": "http://thejoustingpavilion.com/players/942" }
+    }], [{
+      "name": "Semifinal 1",
+      "link": "/watch/?game=brawl-2017/semi-1",
+      "spoiler-protection": true,
+      "p1": { "name": "Jannis Roepert", "faction": "Martell", "agenda": "Banner of the Stag", "link": "http://thejoustingpavilion.com/players/942" },
+      "p2": { "name": "Sam Nowrouzi", "faction": "Greyjoy", "agenda": "Banner of the Dragon", "link": "http://thejoustingpavilion.com/players/2252" }
+    }, {
+      "name": "Semifinal 2",
+      "link": "/watch/?game=brawl-2017/semi-2",
+      "spoiler-protection": true,
+      "p1": { "name": "David Nagy", "faction": "Targaryen", "agenda": "Banner of the Lion", "link": "http://thejoustingpavilion.com/players/7722" },
+      "p2": { "name": "Vrbi", "faction": "Stark", "agenda": "Fealty", "link": "http://thejoustingpavilion.com/players/6021" }
+    }], [{
+      "name": "Final",
+      "link": "/watch/?game=brawl-2017/final",
+      "spoiler-protection": true,
+      "p1": { "name": "Jannis Roepert", "faction": "Martell", "agenda": "Banner of the Stag", "link": "http://thejoustingpavilion.com/players/942" },
+      "p2": { "name": "Vrbi", "faction": "Stark", "agenda": "Fealty", "link": "http://thejoustingpavilion.com/players/6021" }
+    }]
+  ]
+}
