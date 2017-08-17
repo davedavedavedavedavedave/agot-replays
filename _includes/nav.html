@@ -1,3 +1,17 @@
 <nav class="nav">
   <h1>Tourneys</h1>
+
+  <ol>
+    {% assign date = (tourneys[0].date | date: "%b. %Y" ) %}
+    <li>
+      <h2>{{ date }}</h2>
+      <ol>
+        {% for tourney in tourneys %}
+          <li>
+            <a href="#{{ tourney.date }}-{{ tourney.name }}">{{ tourney.name }}</a>
+          </li>
+        {% endfor %}
+      </ol>
+    </li>
+  </ol>
 </nav>
