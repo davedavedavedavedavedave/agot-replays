@@ -1,3 +1,36 @@
-<div>
-  {{ include.tourneys }}
-</div>
+<ol class="content">
+  {% for tourney in tourneys %}
+    <li>
+      <h1 id="2017-08-05-Brawl at the Crossroads Inn">{{ tourney.name }}</h1>
+      {% if tourney.link %}
+        <div class="details"><a href="{{ tourney.link }}">Tournament Details</a></div>
+      {% endif %}
+      <table>
+        <thead>
+          <tr>
+            <th>Match</th>
+            <th>Player</th>
+            <th>Faction<br>Agenda</th>
+            <th>Player</th>
+            <th>Faction<br>Agenda</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for group in tourney.matches %}
+            {% for match in group %}
+              <tr class="">
+                <td><a href="">{{ match.name }}</a></td>
+                {% if match.p1.link %}
+                  <td><a href="http://thejoustingpavilion.com/players/8008">{{ match.p1.name }}</a></td>
+                {% else %}
+                  <td>{{ match.p1.name }}</td>
+                {% endif %}
+                <td>{{ match.p1.faction }}<br>{{ match.p1.agenda }}</td>
+              </tr>
+            {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </li>
+  {% endfor %}
+</ol>
