@@ -25,13 +25,13 @@
                 {% else %}
                   <td>{{ match.p1.name }}</td>
                 {% endif %}
-                <td>{{ match.p1.faction }}<br>{{ match.p1.agenda }}</td>
+                <td><span class="icon-{{ match.p1.faction | downcase | replace: " ", "" | replace: "'", "" }}"></span> {{ match.p1.faction | replace: "'", "’" }}<br>{{ match.p1.agenda | replace_first: '"', '“' | replace_first: '"', '”' }}</td>
                 {% if match.p2.link %}
                   <td><a href="{{ match.p2.link }}">{{ match.p2.name }}</a></td>
                 {% else %}
                   <td>{{ match.p2.name }}</td>
                 {% endif %}
-                <td>{{ match.p2.faction }}<br>{{ match.p2.agenda }}</td>
+                <td><span class="icon-{{ match.p2.faction | downcase | replace: " ", "" | replace: "'", "" }}"></span> {{ match.p1.faction | replace: "'", "’" }}<br>{{ match.p2.agenda }}</td>
               </tr>
             {% endfor %}
           {% endfor %}
