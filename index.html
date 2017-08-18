@@ -8,5 +8,6 @@ layout: default
 {% endfor %}
 {% assign tourneys = (tourneys | sort: 'date' | reversed) %}
 
+<div class="ribbon"><a href="https://github.com/davedavedavedavedavedave/agot-replays/">Add Tourney</a></div>
 {% include nav.html tourneys=tourneys %}
 {% include content.html tourneys=tourneys %}

@@ -42,6 +42,10 @@
     content: "\e60a"
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #3e94ec;
   font-family: "Roboto", helvetica, arial, sans-serif;
@@ -221,7 +225,7 @@ td:last-child {
 }
 .content {
   margin: 0 0 0 300px;
-  padding: 0;
+  padding: 10px 10px 0;
   list-style: none;
 }
 .content > li {
@@ -258,3 +262,60 @@ td:last-child {
   }
 }
 :target {animation: blur .75s ease-out 1;}
+.ribbon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+.ribbon a {
+  background-image: linear-gradient(135deg, #FF7833, #FFD033);
+  transform: rotate(45deg);
+  white-space: nowrap;
+  width: 200px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: -41px;
+  top: 43px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, .5);
+  text-transform: uppercase;
+  transition: box-shadow .2s ease;
+  color: #fff;
+  text-shadow: 0 0 1px black;
+}
+.ribbon a::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  border: 1px dashed rgba(0,0,0,.4);
+}
+.ribbon a:hover {
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, .5);
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    position:static;
+    width: auto;
+  }
+  .nav > ol {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav > ol > li {
+    min-width: 300px;
+    flex-grow: 1;
+  }
+  .content {
+    margin-left: 0;
+  }
+}
