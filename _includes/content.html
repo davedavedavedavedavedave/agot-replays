@@ -31,7 +31,7 @@
                 {% else %}
                   <td>{{ match.p2.name }}</td>
                 {% endif %}
-                <td><span class="icon-{{ match.p2.faction | downcase | replace: " ", "" | replace: "'", "" }}"></span> {{ match.p1.faction | replace: "'", "’" }}<br>{{ match.p2.agenda | replace_first: '"', '“' | replace_first: '"', '”' }}</td>
+                <td><span class="icon-{{ match.p2.faction | downcase | replace: " ", "" | replace: "'", "" }}"></span> {{ match.p2.faction | replace: "'", "’" }}<br>{{ match.p2.agenda | replace_first: '"', '“' | replace_first: '"', '”' }}</td>
               </tr>
             {% endfor %}
           {% endfor %}
