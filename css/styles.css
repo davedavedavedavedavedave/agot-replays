@@ -250,15 +250,7 @@ td:last-child {
       0px 0px 25px #fff,
       0px 0px 25px #fff,
       0px 0px 50px #fff,
-      0px 0px 50px #fff,
-      0px 0px 50px #7B96B8,
-      0px 0px 150px #7B96B8,
-      0px 10px 100px #7B96B8,
-      0px 10px 100px #7B96B8,
-      0px 10px 100px #7B96B8,
-      0px 10px 100px #7B96B8,
-      0px -10px 100px #7B96B8,
-      0px -10px 100px #7B96B8;
+      0px 0px 50px #fff;
   }
 }
 :target {animation: blur .75s ease-out 1;}
