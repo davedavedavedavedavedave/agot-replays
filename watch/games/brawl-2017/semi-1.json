@@ -1,0 +1,38 @@
+{
+	"video": {
+		"type": "Youtube",
+		"src": "E3MzRCs6zIc",
+		"playState": "pause",
+		"volume": 1
+	},
+	"score": {
+		"left": 0,
+		"right": 0
+	},
+	"firstplayer": "none",
+	"challenge": "noChallenge",
+	"leftHidePlots": true,
+	"rightHidePlots": true,
+	"cards": {
+		"leftHand": {},
+		"rightHand": {},
+		"leftUnusedPlots": {
+		},
+		"leftCurrentPlot": {},
+		"leftUsedPlots": {},
+		"rightUnusedPlots": {
+		},
+		"rightCurrentPlot": {},
+		"rightUsedPlots": {},
+		"leftMisc": {
+			"agenda": "01198",
+			"faction": "faction-martell"
+		},
+		"rightMisc": {
+			"agenda": "01204",
+			"faction": "faction-greyjoy"
+		}
+	},
+	"playback": [
+	]
+}

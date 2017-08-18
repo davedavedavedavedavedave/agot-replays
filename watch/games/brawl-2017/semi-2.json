@@ -1,0 +1,38 @@
+{
+	"video": {
+		"type": "Youtube",
+		"src": "FcrsePjxOD8",
+		"playState": "pause",
+		"volume": 1
+	},
+	"score": {
+		"left": 0,
+		"right": 0
+	},
+	"firstplayer": "none",
+	"challenge": "noChallenge",
+	"leftHidePlots": true,
+	"rightHidePlots": true,
+	"cards": {
+		"leftHand": {},
+		"rightHand": {},
+		"leftUnusedPlots": {
+		},
+		"leftCurrentPlot": {},
+		"leftUsedPlots": {},
+		"rightUnusedPlots": {
+		},
+		"rightCurrentPlot": {},
+		"rightUsedPlots": {},
+		"leftMisc": {
+			"agenda": "01027",
+			"faction": "faction-stark"
+		},
+		"rightMisc": {
+			"agenda": "04037",
+			"faction": "faction-thenightswatch"
+		}
+	},
+	"playback": [
+	]
+}
