@@ -1,0 +1,30 @@
+{
+  "name": "Tourney of Stahleck 2017",
+  "date": "2017-11-18",
+  "link": "http://thejoustingpavilion.com/tournaments/4470/games",
+  "matches": [
+    [{
+      "name": "Top 32 - Game 1",
+      "link": "https://youtu.be/WTes03GXvso",
+      "p1": { "name": "Frank van den Eerenbeemt", "faction": "Tyrell", "agenda": "Kings of Summer", "link": "http://thejoustingpavilion.com/players/5378" },
+      "p2": { "name": "Zifan Z.", "faction": "Tyrell", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/9624" }
+    }, {
+      "name": "Top 32 - Game 2",
+      "link": "https://youtu.be/nHyNERJbwmc",
+      "p1": { "name": "Nicolo “Nimer” M.", "faction": "Tyrell", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/9530" },
+      "p2": { "name": "Dmitry Z.", "faction": "Lannister", "agenda": "The Lord of the Crossing", "link": "http://thejoustingpavilion.com/players/9626" }
+    }], [{
+      "name": "Top 16 - Game 1",
+      "link": "https://youtu.be/DBpeAtvz2k4",
+      "spoiler-protection": true,
+      "p1": { "name": "Tom Melucci", "faction": "Greyjoy", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/646" },
+      "p2": { "name": "Zifan Z.", "faction": "Tyrell", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/9624" }
+    }, {
+      "name": "Top 16 - Game 2",
+      "link": "https://youtu.be/-R_t7-d-isI",
+      "spoiler-protection": true,
+      "p1": { "name": "Franke R.", "faction": "Lannister", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/7722" },
+      "p2": { "name": "Dmitry Z.", "faction": "Lannister", "agenda": "The Lord of the Crossing", "link": "http://thejoustingpavilion.com/players/9626" }
+    }]
+  ]
+}
