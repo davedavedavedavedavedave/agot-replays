@@ -4,6 +4,11 @@
   "link": "http://thejoustingpavilion.com/tournaments/4470/games",
   "matches": [
     [{
+      "name": "Swiss Round 4",
+      "link": "/watch/?game=stahleck-2017/swiss-r4",
+      "p1": { "name": "Radu Zabava", "faction": "Targaryen", "agenda": "The Lord of the Crossing", "link": "http://thejoustingpavilion.com/players/4064" },
+      "p2": { "name": "rulaso91", "faction": "Lannister", "agenda": "Fealty", "link": "http://thejoustingpavilion.com/players/9509" }
+    }], [{
       "name": "Top 32 - Game 1",
       "link": "https://youtu.be/WTes03GXvso",
       "p1": { "name": "Frank van den Eerenbeemt", "faction": "Tyrell", "agenda": "Kings of Summer", "link": "http://thejoustingpavilion.com/players/5378" },

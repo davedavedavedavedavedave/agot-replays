@@ -361,7 +361,7 @@ var synced = (function () {
 										modestbranding: 1
 									},
 									events: {
-										onReady: function () { },
+										onReady: function (event) { },
 										onStateChange: function (event) {
 											if (event.data === 1) {
 												if (!videoInit) {
@@ -409,6 +409,10 @@ var synced = (function () {
 			}
 		},
 		changeVideoVolume: function (newVolume) {
+			if (player) {
+				console.log(player.setVolume, newVolume)
+				player.setVolume(newVolume * 100);
+			}
 			var videos = $('.video');
 			for (var i = 0; i < videos.length; i++) {
 				videos[i].volume = newVolume;
