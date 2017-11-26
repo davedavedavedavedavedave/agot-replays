@@ -6,7 +6,7 @@ layout: default
 {% for entry in site.data.tourneys %}
   {% assign tourneys = tourneys | push: entry[1] %}
 {% endfor %}
-{% assign tourneys = (tourneys | sort: 'date' | reversed) %}
+{% assign tourneys = tourneys | sort: 'date' | reverse %}
 
 <div class="ribbon"><a href="https://github.com/davedavedavedavedavedave/agot-replays/">Add Tourney</a></div>
 {% include nav.html tourneys=tourneys %}
