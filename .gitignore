@@ -1,4 +1,5 @@
 *.sublime-project
 *.sublime-workspace
 Gemfile
+Gemfile.lock
 _site/
