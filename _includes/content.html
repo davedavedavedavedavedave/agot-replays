@@ -1,7 +1,7 @@
 <ol class="content">
   {% for tourney in tourneys %}
     <li>
-      <h1 id="2017-08-05-Brawl at the Crossroads Inn">{{ tourney.name }}</h1>
+      <h1 id="{{ tourney.date }}-{{ tourney.name }}">{{ tourney.name }}</h1>
       {% if tourney.link %}
         <div class="details"><a href="{{ tourney.link }}">Tournament Details</a></div>
       {% endif %}
