@@ -3,10 +3,20 @@
 
   <ol>
     {% assign date = (tourneys[0].date | date: "%b. %Y" ) %}
+    {% assign oldDate = date %}
     <li>
       <h2>{{ date }}</h2>
       <ol>
         {% for tourney in tourneys %}
+          {% assign date = (tourney.date | date: "%b. %Y" ) %}
+          {% if date != oldDate %}
+              </ol>
+            </li>
+            <li>
+              <h2>{{ date }}</h2>
+              <ol>
+          {% endif %}
+          {% assign oldDate = date %}
           <li>
             <a href="#{{ tourney.date }}-{{ tourney.name }}">{{ tourney.name }}</a>
           </li>
