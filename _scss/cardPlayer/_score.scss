@@ -1,0 +1,58 @@
+$radius: 500px;
+
+.leftScore,
+.rightScore {
+  position: absolute;
+  width: $radius * 2;
+  height: $radius * 2;
+  transition: transform .5s ease, opacity .5s ease;
+  bottom: -$radius * 1.6 + 86;
+  z-index: 20;
+  pointer-events: none;
+	opacity: 1;
+}
+.score {
+  background: url(#{$imgBaseUrl}/scoreBackdrop.png);
+  background-size: contain;
+  width: $counterRadius * 2;
+  height: $counterRadius * 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -$counterRadius;
+  margin-left: -$counterRadius;
+  color: #fff;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: $counterRadius * 1.2;
+  font-weight: bold;
+  text-shadow: 5px 2px 2px black;
+  text-align: center;
+  line-height: $counterRadius * 2;
+}
+
+.leftScore {
+  left: -$radius * 1.6;
+
+  @for $counter from 1 through 15 {
+    &[data-score="#{$counter}"] {
+      transform: rotate(0deg + ($counter) * (-360 / 16));
+    }
+
+    .score:nth-child(#{$counter}) {
+      transform: rotate(0deg + ($counter - 3) * (360 / 16)) translateX($radius) rotate(45deg);
+    }
+  }
+}
+.rightScore {
+  right: -$radius * 1.6;
+
+  @for $counter from 1 through 15 {
+    &[data-score="#{$counter}"] {
+      transform: rotate(0deg + ($counter) * (360 / 16));
+    }
+
+    .score:nth-child(#{$counter}) {
+      transform: rotate(0deg + ($counter - 11) * (-360 / 16)) translateX($radius) rotate(135deg);
+    }
+  }
+}

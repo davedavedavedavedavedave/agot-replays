@@ -1,0 +1,262 @@
+$collapsedWidth: 250px;
+$expandedWidth: 600px;
+
+@keyframes slideinleft {
+  0% {
+    left: -$collapsedWidth;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slideinright {
+  0% {
+    right: -$collapsedWidth;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.panel {
+  border: 2px solid transparent;
+  color: #333;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  width: $expandedWidth;
+  transition: width .5s ease .5s, height .5s ease 0s;
+  box-shadow: 0px 0px 0px 1px #fff;
+  margin-bottom: 1px;
+
+  .alignPanelsLeft & {
+    animation: slideinleft 1s ease;
+    left: 0;
+
+    &.removed {
+      left: -$expandedWidth - 5;
+      &.collapsed {
+        left: -$collapsedWidth - 5;
+      }
+    }
+  } 
+  .alignPanelsRight & {
+    animation: slideinright 1s ease;
+    right: 0;
+    float: right;
+    clear: right;
+
+    &.removed {
+      right: -$expandedWidth - 5;
+      &.collapsed {
+        right: -$collapsedWidth - 5;
+      }
+    }
+  }
+  &.collapsed {
+    width: $collapsedWidth;
+    height: 38px !important;
+    transition: width .5s ease 0s, height .5s ease .5s;
+  }
+  &.removed {
+    height: 0 !important;
+    border-width: 0;
+    margin: 0;
+    box-shadow: 0px 0px 0px 0px #fff;
+    transition: left .5s ease 0s, right .5s ease 0s, height .5s ease .5s, border-width .5s ease .5s, box-shadow .5s ease .5s;
+    animation-play-state: paused;
+  }
+  &.type-faction {
+    width: $collapsedWidth;
+  }
+
+  .synced {
+    display: none;
+    opacity: 0;
+  }
+  .panel-body {
+    font: 16px/20px 'Crimson Text', serif;
+    position: absolute;
+    top: 38px;
+    margin: 15px;
+    width: $expandedWidth - $collapsedWidth - 15;
+    
+    .alignPanelsLeft & {
+      left: $collapsedWidth - 15;
+    }
+    .alignPanelsRight & {
+      right: $collapsedWidth - 15;
+    }
+  }
+  .card-type {
+    font-weight: bold;
+  }
+  .card-props {
+    .icon-intrigue {
+      color: #13522f;
+    }
+    .icon-power {
+      color: #292e5f;
+    }
+    .icon-military {
+      color: #c8232a;
+    }
+  }
+  .card-traits {
+    font-weight: 700;
+    font-style: italic;
+    display: block;
+    margin: 0 0 10px;
+  }
+  .card-text {
+    .alignPanelsLeft & {
+      border-left-width: 2px;
+      border-left-style: solid;
+      padding-left: 6px;
+    }
+    .alignPanelsRight & {
+      border-right-width: 2px;
+      border-right-style: solid;
+      padding-right: 6px;
+    }
+    p {
+      margin: 6px 0;
+      
+      i {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+
+
+@mixin card-panel-coloring($primary, $secondary) {
+  border-color: $primary;
+
+  .panel-title {
+    background-color: $primary;
+    color: $secondary;
+  }
+  .card-faction {
+    [class^="icon-"],
+    [class*=" icon-"] {
+      color: $primary;
+    }
+  }
+  .card-text {
+    border-color: $primary;
+  }
+}
+.panel {
+  &.style-greyjoy        { @include card-panel-coloring(#1d7a99, #fff); }
+  &.style-targaryen      { @include card-panel-coloring(#1c1c1c, #fff); }
+  &.style-lannister      { @include card-panel-coloring(#c00106, #fff); }
+  &.style-tyrell         { @include card-panel-coloring(#509f16, #fff); }
+  &.style-baratheon      { @include card-panel-coloring(#e3d852, #333); }
+  &.style-stark          { @include card-panel-coloring(#cfcfcf, #333); }
+  &.style-martell        { @include card-panel-coloring(#e89521, #333); }
+  &.style-thenightswatch { @include card-panel-coloring(#7a7a7a, #333); }
+  &.style-neutral        { @include card-panel-coloring(#a99560, #333); }
+  &.style-none           { display: none; }
+}
+
+
+
+.panel-title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px 15px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: padding-left .5s ease 0s;
+
+  .leftAgenda.collapsed &,
+  .leftFaction.collapsed &,
+  .alignPanelsLeft .collapsed & {
+    padding-left: 60px;
+    transition: padding-left .5s ease .5s;
+  }
+  .rightAgenda.collapsed &,
+  .rightFaction.collapsed &,
+  .alignPanelsRight .collapsed & {
+    padding-right: 60px;
+    transition: padding-left .5s ease .5s;
+  }
+}
+.panel-image {
+  margin: 15px;
+  width: $collapsedWidth - 30;
+  height: 220px;
+  transition: transform .5s ease 0s;
+  
+  .leftAgenda &,
+  .leftFaction &,
+  .alignPanelsLeft & {
+    float: left;
+    transform-origin: top left;
+  }
+  .rightAgenda &,
+  .rightFaction &,
+  .alignPanelsRight & {
+    float: right;
+    transform-origin: top right;
+  }
+  .collapsed & {
+    transform: translateY(-52px) scale(.16);
+    transition: transform .5s ease .5s;
+
+    .type-plot & {
+      transform: translateY(-41px) scale(.16);
+    }
+    .type-agenda & {
+      transform: translateY(-48px) scale(.16);
+    }
+    .type-faction & {
+      transform: translateY(-59px) scale(.16);
+    }
+  }
+  
+  .type-character & {
+    background-size: 280px 389px;
+    background-position: -54px -2px;
+  }
+  .type-agenda & {
+    background-size: 80%;
+    background-position: -55px -5px;
+  }
+  .type-event & {
+    background-size: 300px 419px;
+    background-position: -40px -55px;
+  }
+  .type-location & {
+    background-size: 300px 419px;
+    background-position: right -15px;
+  }
+  .type-attachment & {
+    background-size: 300px 419px;
+    background-position: -40px -20px;
+  }
+  .type-plot & {
+    background-size: 227px 162px;
+    background-position: center -5px;
+    height: 75px;
+    margin-top: 25px;
+  }
+  .type-agenda & {
+    background-size: 220px 307px;
+    background-position: 0 -38px;
+    height: 154px;
+  }
+  .type-faction & {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 308px;
+  }
+}

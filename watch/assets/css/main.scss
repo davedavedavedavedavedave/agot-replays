@@ -1,0 +1,63 @@
+---
+---
+
+// Base Variables
+$imgBaseUrl: '/watch/assets/img';
+$fontBaseUrl: '/watch/assets/fonts';
+$counterRadius: 50px;
+
+// Base Styles
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+// Imports
+@import 'video';
+@import 'cardPlayer/firstplayer';
+@import 'cardPlayer/challenge';
+@import 'cardPlayer/score';
+@import 'cardPlayer/card';
+@import 'cardPlayer/cardContainers';
+@import 'controls';
+
+// Fonts
+@font-face {
+    font-family: 'thronesdb';
+    font-weight: 400;
+    font-style: normal;
+    src: url('#{$fontBaseUrl}/thronesdb/thronesdb.eot');
+    src: url('#{$fontBaseUrl}/thronesdb/thronesdb.eot#iefix') format('embedded-opentype'),
+     url('#{$fontBaseUrl}/thronesdb/thronesdb.ttf') format('truetype'),
+     url('#{$fontBaseUrl}/thronesdb/thronesdb.woff') format('woff'),
+     url('#{$fontBaseUrl}/thronesdb/thronesdb.svg#thronesdb') format('svg');
+}
+@font-face {
+  font-family: 'Julius Sans One';
+  font-weight: 400;
+  font-style: normal;
+  src: url('#{$fontBaseUrl}/Julius-Sans-One-regular/Julius-Sans-One-regular.eot');
+  src: url('#{$fontBaseUrl}/Julius-Sans-One-regular/Julius-Sans-One-regular.eot?#iefix') format('embedded-opentype'),
+     local('Julius Sans One'),
+     local('Julius-Sans-One-regular'),
+     url('#{$fontBaseUrl}/Julius-Sans-One-regular/Julius-Sans-One-regular.woff2') format('woff2'),
+     url('#{$fontBaseUrl}/Julius-Sans-One-regular/Julius-Sans-One-regular.woff') format('woff'),
+     url('#{$fontBaseUrl}/Julius-Sans-One-regular/Julius-Sans-One-regular.ttf') format('truetype'),
+     url('#{$fontBaseUrl}/Julius-Sans-One-regular/Julius-Sans-One-regular.svg#JuliusSansOne') format('svg');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-weight: 400;
+  font-style: normal;
+  src: url('#{$fontBaseUrl}/Crimson-Text-regular/Crimson-Text-regular.eot');
+  src: url('#{$fontBaseUrl}/Crimson-Text-regular/Crimson-Text-regular.eot?#iefix') format('embedded-opentype'),
+     local('Crimson Text'),
+     local('Crimson-Text-regular'),
+     url('#{$fontBaseUrl}/Crimson-Text-regular/Crimson-Text-regular.woff2') format('woff2'),
+     url('#{$fontBaseUrl}/Crimson-Text-regular/Crimson-Text-regular.woff') format('woff'),
+     url('#{$fontBaseUrl}/Crimson-Text-regular/Crimson-Text-regular.ttf') format('truetype'),
+     url('#{$fontBaseUrl}/Crimson-Text-regular/Crimson-Text-regular.svg#CrimsonText') format('svg');
+}

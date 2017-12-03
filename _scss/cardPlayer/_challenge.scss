@@ -1,0 +1,132 @@
+$bottomOffset: 89px;
+$sideOffset: 140px;
+
+@keyframes leftMilIconDive {
+  0% {
+    bottom: $bottomOffset;
+  }
+  50% {
+    bottom: -$counterRadius * 2;
+  }
+  100% {
+    bottom: $bottomOffset;
+  }
+}
+@keyframes leftIntIconDive {
+  0% {
+    bottom: $bottomOffset;
+  }
+  50% {
+    bottom: -$counterRadius * 2;
+  }
+  100% {
+    bottom: $bottomOffset;
+  }
+}
+@keyframes leftPowerIconDive {
+  0% {
+    bottom: $bottomOffset;
+  }
+  50% {
+    bottom: -$counterRadius * 2;
+  }
+  100% {
+    bottom: $bottomOffset;
+  }
+}
+@keyframes rightMilIconDive {
+  0% {
+    bottom: $bottomOffset;
+  }
+  50% {
+    bottom: -$counterRadius * 2;
+  }
+  100% {
+    bottom: $bottomOffset;
+  }
+}
+@keyframes rightIntIconDive {
+  0% {
+    bottom: $bottomOffset;
+  }
+  50% {
+    bottom: -$counterRadius * 2;
+  }
+  100% {
+    bottom: $bottomOffset;
+  }
+}
+@keyframes rightPowerIconDive {
+  0% {
+    bottom: $bottomOffset;
+  }
+  50% {
+    bottom: -$counterRadius * 2;
+  }
+  100% {
+    bottom: $bottomOffset;
+  }
+}
+@keyframes noIconDive {
+  0% {
+    bottom: $bottomOffset;
+  }
+  50% {
+    bottom: -$counterRadius * 2;
+  }
+  100% {
+    bottom: $bottomOffset;
+  }
+}
+
+.challengeIcon {
+  position: absolute;
+  width: $counterRadius * 2;
+  height: $counterRadius * 2;
+  background-size: $counterRadius * 6 $counterRadius * 2;
+  background-repeat: no-repeat;
+  background-image: url(#{$imgBaseUrl}/challengeIcons.png);
+  bottom: $bottomOffset;
+  transition: left 0s linear .5s, background-position 0s linear .5s, opacity 0s linear .5s;
+  pointer-events: none;
+  opacity: 1;
+}
+.challengeIcon[data-challenge^="left"] {
+  left: $sideOffset;
+}
+.challengeIcon[data-challenge^="right"] {
+  left: calc(100% - #{($counterRadius * 2 + $sideOffset)});
+}
+.challengeIcon[data-challenge$="Mil"] {
+  background-position: 0 0;
+}
+.challengeIcon[data-challenge$="Int"] {
+  background-position: -$counterRadius * 2 0;
+}
+.challengeIcon[data-challenge$="Power"] {
+  background-position: -$counterRadius * 4 0;
+}
+.challengeIcon[data-challenge="leftMil"] {
+  animation: leftMilIconDive 1s ease;
+}
+.challengeIcon[data-challenge="leftInt"] {
+  animation: leftIntIconDive 1s ease;
+}
+.challengeIcon[data-challenge="leftPower"] {
+  animation: leftPowerIconDive 1s ease;
+}
+.challengeIcon[data-challenge="rightMil"] {
+  animation: rightMilIconDive 1s ease;
+}
+.challengeIcon[data-challenge="rightInt"] {
+  animation: rightIntIconDive 1s ease;
+}
+.challengeIcon[data-challenge="rightPower"] {
+  animation: rightPowerIconDive 1s ease;
+}
+.challengeIcon[data-challenge="null"],
+.challengeIcon[data-challenge="noChallenge"] {
+  animation: noIconDive 1s ease;
+  opacity: 0;
+  left: 0;
+}

@@ -1,0 +1,14 @@
+{
+	"video": {
+		"type": "Youtube",
+		"src": "FcrsePjxOD8",
+		"playState": "pause",
+		"volume": 1
+	},
+	"playback": [
+			{"offset":0,"data":{"key":"cards.leftMisc.agenda", "val": "01200"}},
+			{"offset":0,"data":{"key":"cards.leftMisc.faction", "val": "faction-targaryen"}},
+			{"offset":0,"data":{"key":"cards.rightMisc.agenda", "val": "01027"}},
+			{"offset":0,"data":{"key":"cards.rightMisc.faction", "val": "faction-stark"}},
+	]
+}

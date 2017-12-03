@@ -1,2 +1,5 @@
 emptyArray: []
 baseurl: '/agot-replays'
+sass:
+  sass_dir: ./_scss
+  style: compressed

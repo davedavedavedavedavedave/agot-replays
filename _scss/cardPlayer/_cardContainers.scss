@@ -1,0 +1,145 @@
+.leftMisc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 25;
+}
+.rightMisc {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 25;
+}
+
+.leftHand {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.rightHand {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@keyframes growvertically {
+  0% {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    height: 0;
+    margin-bottom: 0;
+  }
+  100% {
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    height: 38px;
+    margin-bottom: 1px;
+  }
+}
+
+.leftPlots {
+  position: absolute;
+  left: 254px;
+  bottom: 0;
+}
+.rightPlots {
+  position: absolute;
+  right: 254px;
+  bottom: 0;
+}
+.leftPlots,
+.rightPlots {
+  .panel {
+    animation-name: growvertically;
+
+    &.removed.collapsed,
+    &.removed {
+      left: auto;
+      right: auto;
+    }
+  }
+  .panel {
+    transition: width .5s ease .5s, height .5s ease, border-top-width .5s ease, border-bottom-width .5s ease, margin .5s ease;
+
+    &.collapsed {
+      border-left-width: 2px;
+      border-right-width: 2px;
+      transition: width .5s ease 0s, height .5s ease .5s, border-top-width .5s ease .5s, border-bottom-width .5s ease .5s, margin .5s ease .5s, box-shadow 0s ease 1s;
+    }
+  }
+  &.hidePiles .leftUsedPlots .panel,
+  &.hidePiles .rightUsedPlots .panel,
+  &.hidePiles .leftUnusedPlots .panel,
+  &.hidePiles .rightUnusedPlots .panel {
+    height: 0 !important;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    margin: 0;
+    width: $collapsedWidth;
+    animation-duration: 0s;
+  }
+}
+
+
+.rightUsedPlots,
+.leftUsedPlots,
+.rightCurrentPlot,
+.leftCurrentPlot,
+.rightUnusedPlots,
+.leftUnusedPlots {
+  padding: 0 1px;
+  width: $collapsedWidth + 4;
+  border: 0px solid transparent;
+  transition: border .5s ease;
+  z-index: 10;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.rightUnusedPlots:not(:empty),
+.leftUnusedPlots:not(:empty) {
+  border-top-width: 32px;
+
+  .hidePiles & {
+    border-top-width: 0;
+    transition: border .5s ease .5s;
+  }
+}
+.rightUsedPlots:not(:empty),
+.leftUsedPlots:not(:empty) {
+  border-bottom-width: 32px;
+
+  .hidePiles & {
+    border-bottom-width: 0;
+    transition: border .5s ease .5s;
+  }
+}
+
+.changeHiddenState {
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  height: 44px;
+  line-height: 44px;
+  width: 44px;
+  text-align: center;
+  font-size: 28px;
+
+  .rightPlots & {
+    left: auto;
+    right: 100%;
+  }
+
+  .hidePiles &::before {
+    content: "+";
+  }
+  &::before {
+    content: "-";
+  }
+}
