@@ -18,6 +18,16 @@
       "link": "/watch/?game=stahleck-2017/swiss-r6",
       "p1": { "name": "Isian Hasmuja", "faction": "Greyjoy", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/2519" },
       "p2": { "name": "Johannes Järvinen", "faction": "Tyrell", "agenda": "Kings of Summer", "link": "http://thejoustingpavilion.com/players/2670" }
+    }, {
+      "name": "Swiss Round 7",
+      "link": "/watch/?game=stahleck-2017/swiss-r7",
+      "p1": { "name": "Robert Chavat", "faction": "Tyrell", "agenda": "Kings of Summer", "link": "http://thejoustingpavilion.com/players/396" },
+      "p2": { "name": "James Waumsley", "faction": "The Night's Watch", "agenda": "Kings of Summer", "link": "http://thejoustingpavilion.com/players/971" }
+    }, {
+      "name": "Swiss Round 8",
+      "link": "/watch/?game=stahleck-2017/swiss-r8",
+      "p1": { "name": "Even S.", "faction": "Greyjoy", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/9586" },
+      "p2": { "name": "Johannes Järvinen", "faction": "Tyrell", "agenda": "Kings of Summer", "link": "http://thejoustingpavilion.com/players/2670" }
     }], [{
       "name": "Top 32 - Game 1",
       "link": "https://youtu.be/WTes03GXvso",
