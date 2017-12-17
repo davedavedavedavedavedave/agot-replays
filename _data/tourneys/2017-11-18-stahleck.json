@@ -60,6 +60,12 @@
       "spoiler-protection": true,
       "p1": { "name": "Franke R.", "faction": "Lannister", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/9565" },
       "p2": { "name": "Dmitry Z.", "faction": "Lannister", "agenda": "The Lord of the Crossing", "link": "http://thejoustingpavilion.com/players/9626" }
+    }, {
+      "name": "Top 16 - Game 3",
+      "link": "/watch/?game=stahleck-2017/top16",
+      "spoiler-protection": true,
+      "p1": { "name": "Diego García", "faction": "Greyjoy", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/1579" },
+      "p2": { "name": "Marti “Harren” F.", "faction": "Tyrell", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/9466" }
     }]
   ]
 }
