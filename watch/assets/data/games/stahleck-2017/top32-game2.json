@@ -1,0 +1,12 @@
+{
+  "video": {
+    "type": "Youtube",
+    "src": "nHyNERJbwmc",
+    "volume": 1
+  },
+  "audio": [{
+    "src": "/watch/assets/data/games/stahleck-2017/top32-game2.mp3",
+    "label": "Trident Gaming (German)"
+  }],
+  "playback": []
+}

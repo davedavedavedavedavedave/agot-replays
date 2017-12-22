@@ -29,11 +29,13 @@ requirejs(['lib/html5-youtube', 'src/CardPlayer', 'src/MediaSyncer', 'src/Contro
       const audioLabels = (game.audio || []).map(item => item.label);
 
       // setup of card playback
-      const elCardPlayback = document.createElement('div');
-      elCardPlayback.className = 'cardPlayback';
-      document.body.appendChild(elCardPlayback);
-      const cardPlayback = new CardPlayer(elCardPlayback, game.playback);
-      foo = cardPlayback;
+      let cardPlayback;
+      if (game.playback && game.playback.length) {
+        const elCardPlayback = document.createElement('div')
+        elCardPlayback.className = 'cardPlayback';
+        document.body.appendChild(elCardPlayback);
+        cardPlayback = new CardPlayer(elCardPlayback, game.playback);
+      }
 
       // setup of playback controls
       const elControls = document.createElement('div');
@@ -43,7 +45,7 @@ requirejs(['lib/html5-youtube', 'src/CardPlayer', 'src/MediaSyncer', 'src/Contro
 
       // setup of video/audio/card syncer
       const syncer = new MediaSyncer({
-        media: [video].concat(audio).concat([cardPlayback]),
+        media: [video].concat(audio).concat((cardPlayback ? [cardPlayback] : [])),
         tolerance: 0.1
       });
     });
