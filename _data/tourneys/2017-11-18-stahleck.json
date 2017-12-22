@@ -66,6 +66,24 @@
       "spoiler-protection": true,
       "p1": { "name": "Diego García", "faction": "Greyjoy", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/1579" },
       "p2": { "name": "Marti “Harren” F.", "faction": "Tyrell", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/9466" }
+    }], [{
+      "name": "Quarterfinals",
+      "link": "https://youtu.be/7BlsA1f1mCs",
+      "spoiler-protection": true,
+      "p1": { "name": "Marti “Harren” F.", "faction": "Tyrell", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/9466" },
+      "p2": { "name": "Lennart Paga", "faction": "Martell", "agenda": "Banner of the Stag", "link": "http://thejoustingpavilion.com/players/8030" }
+    }], [{
+      "name": "Semifinals",
+      "link": "/watch/?game=stahleck-2017/semi",
+      "spoiler-protection": true,
+      "p1": { "name": "Marti “Harren” F.", "faction": "Tyrell", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/9466" },
+      "p2": { "name": "James Waumsley", "faction": "The Night's Watch", "agenda": "Kings of Summer", "link": "http://thejoustingpavilion.com/players/971" }
+    }], [{
+      "name": "Finals",
+      "link": "/watch/?game=stahleck-2017/finals",
+      "spoiler-protection": true,
+      "p1": { "name": "Marti “Harren” F.", "faction": "Tyrell", "agenda": "“The Rains of Castamere”", "link": "http://thejoustingpavilion.com/players/9466" },
+      "p2": { "name": "Henri L.", "faction": "Targaryen", "agenda": "The Lord of the Crossing", "link": "http://thejoustingpavilion.com/players/9510" }
     }]
   ]
 }
