@@ -1,0 +1,12 @@
+{
+  "video": {
+    "type": "Youtube",
+    "src": "7BlsA1f1mCs",
+    "volume": 1
+  },
+  "audio": [{
+    "src": "/watch/assets/data/games/stahleck-2017/quarter-game1.mp3",
+    "label": "Trident Gaming (German)"
+  }],
+  "playback": []
+}
