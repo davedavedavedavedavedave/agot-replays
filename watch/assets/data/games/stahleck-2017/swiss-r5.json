@@ -6,6 +6,9 @@
     "volume": 1
   },
   "audio": [{
+    "src": "/watch/assets/data/games/stahleck-2017/swiss-r5-en.mp3",
+    "label": "Stephen and Alejandro (English)"
+  }, {
     "src": "/watch/assets/data/games/stahleck-2017/swiss-r5.mp3",
     "label": "Trident Gaming (German)"
   }],
